@@ -7,21 +7,30 @@
 //
 
 #import "ViewController.h"
+#import "BlocksKit.h"
 
 @interface ViewController ()
 
 @end
 
-@implementation ViewController
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+@implementation ViewController {
+    UIAlertView *alert;
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+
+    alert = [[UIAlertView alloc] initWithTitle:@"T" message:@"ASd"];
+    [alert addButtonWithTitle:@"hello" handler:^{
+        NSLog(@"niezle");
+    }];
+
+    [alert show];
+
+}
+
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

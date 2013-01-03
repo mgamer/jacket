@@ -18,9 +18,11 @@
 		90E8C0DB16947A5400205F24 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90E8C0DA16947A5400205F24 /* Default-568h@2x.png */; };
 		90E8C0DE16947A5400205F24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E8C0DD16947A5400205F24 /* ViewController.m */; };
 		90E8C0E116947A5400205F24 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90E8C0DF16947A5400205F24 /* ViewController.xib */; };
+		E31B600934744D09AC1A71ED /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC1B0534C5B42459F9193CD /* libPods.a */; settings = {}; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		57D576A4210545259920F1F6 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		90E8C0C016947A5400205F24 /* jacket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jacket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90E8C0C416947A5400205F24 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		90E8C0C616947A5400205F24 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,6 +39,7 @@
 		90E8C0DC16947A5400205F24 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		90E8C0DD16947A5400205F24 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		90E8C0E016947A5400205F24 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		CBC1B0534C5B42459F9193CD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPods.a; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +50,7 @@
 				90E8C0C516947A5400205F24 /* UIKit.framework in Frameworks */,
 				90E8C0C716947A5400205F24 /* Foundation.framework in Frameworks */,
 				90E8C0C916947A5400205F24 /* CoreGraphics.framework in Frameworks */,
+				E31B600934744D09AC1A71ED /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +63,7 @@
 				90E8C0CA16947A5400205F24 /* jacket */,
 				90E8C0C316947A5400205F24 /* Frameworks */,
 				90E8C0C116947A5400205F24 /* Products */,
+				57D576A4210545259920F1F6 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +81,7 @@
 				90E8C0C416947A5400205F24 /* UIKit.framework */,
 				90E8C0C616947A5400205F24 /* Foundation.framework */,
 				90E8C0C816947A5400205F24 /* CoreGraphics.framework */,
+				CBC1B0534C5B42459F9193CD /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,6 +123,7 @@
 				90E8C0BC16947A5400205F24 /* Sources */,
 				90E8C0BD16947A5400205F24 /* Frameworks */,
 				90E8C0BE16947A5400205F24 /* Resources */,
+				56E057022B3342D7BC12594C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,6 +153,8 @@
 			mainGroup = 90E8C0B516947A5400205F24;
 			productRefGroup = 90E8C0C116947A5400205F24 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+			);
 			projectRoot = "";
 			targets = (
 				90E8C0BF16947A5400205F24 /* jacket */,
@@ -167,6 +176,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56E057022B3342D7BC12594C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 1;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		90E8C0BC16947A5400205F24 /* Sources */ = {
@@ -253,6 +280,7 @@
 		};
 		90E8C0E516947A5400205F24 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57D576A4210545259920F1F6 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "jacket/jacket-Prefix.pch";
@@ -264,6 +292,7 @@
 		};
 		90E8C0E616947A5400205F24 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57D576A4210545259920F1F6 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "jacket/jacket-Prefix.pch";
