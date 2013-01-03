@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Network.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <RKRequestDelegate>
 
 @end
